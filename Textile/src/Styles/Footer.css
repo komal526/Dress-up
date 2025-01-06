@@ -1,0 +1,84 @@
+.footer {
+    position: relative;
+    background: url('../photos/f4.avif') no-repeat center center / cover;
+    color: #fff;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adjust transparency */
+    backdrop-filter: blur(2px);
+    /* Adjust blurriness */
+    z-index: 1;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-logo span {
+    color: #ffcc00;
+}
+
+.footer-heading {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.footer-gd-16,
+.footer-contact-list,
+.list-footer-block,
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-gd-16 li a,
+.footer-contact-list li,
+.list-footer-block li,
+.social li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-gd-16 li a:hover,
+.social li a:hover {
+    color: #ffcc00;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social li a i {
+    font-size: 20px;
+}
+
+.copy-text {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.copy-text a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.copy-text a:hover {
+    text-decoration: underline;
+}

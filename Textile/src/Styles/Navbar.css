@@ -1,0 +1,118 @@
+/* Navbar container */
+.navbar1 {
+    background: url('../photos/f2.avif') no-repeat center center / cover;
+    position: relative;
+    padding: 10px 0;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Overlay effect */
+.navbar1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust transparency */
+    backdrop-filter: blur(2px);
+    /* Adjust blurriness */
+    z-index: -1;
+}
+
+
+.link_list{
+        list-style: none;
+            text-decoration: none;
+}
+
+/* List container */
+.list-navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin: 0;
+    /* list-style-type: none; */
+    /* list-style: none; */
+    text-decoration: none;
+}
+
+/* Heading styling */
+.list-navbar-heading {
+    flex-grow: 1;
+    margin: 0;
+    padding-right: 100px;
+}
+
+
+
+/* Navbar items */
+.list-navbar-item1 {
+    padding: 10px;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list-navbar-item1:hover {
+    color: #ffcc00;
+}
+
+/* Search bar styling */
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search .form-control {
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 40px;
+}
+
+.navbar-search .btn {
+    margin-left: 8px;
+    border-radius: 20px;
+    background-color: #ffcc00ea;
+    border: none;
+    color: #000;
+    padding: 3px;
+}
+
+.navbar-search .btn:hover {
+    background-color: #fff;
+    color: #ffcc00;
+}
+
+/* Keyframes for animated text */
+.animate-charcter {
+    /* text-transform: uppercase; */
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 90px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}

@@ -1,0 +1,143 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+
+.form-group {
+  width: calc(50% - 10px);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group-2{
+  display: flex;
+align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.form-group-radio{
+  padding-left: 30px;
+}
+
+
+.form-group-3 {
+  width: calc(90% - 10px);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group-3 label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  /* text-align: center; */
+}
+
+.form-group-3 input[type="text"],
+.form-group-3 input[type="tel"],
+.form-group-3 input[type="email"],
+.form-group-3 input[type="number"],
+.form-group-3 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group-3 input[type="text"]:focus,
+.form-group-3 input[type="tel"]:focus,
+.form-group-3 input[type="email"]:focus,
+.form-group-3 input[type="number"]:focus,
+.form-group-3 textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+
+
